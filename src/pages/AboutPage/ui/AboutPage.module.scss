@@ -1,0 +1,58 @@
+.team {
+    border-bottom: 1px solid var(--border);
+}
+
+.photoWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--card-bd-black);
+    padding-top: 60px;
+    margin-bottom: 200px;
+}
+
+.photoInner {
+    margin-bottom: -200px;
+}
+
+.AboutPage {
+    max-width: 1100px;
+    padding: 0 10px;
+}
+
+.largeImg {
+    width: 1100px;
+
+    @media (max-width: 500px) {
+        width: 350px;
+    }
+}
+
+.smallImg {
+    width: 500px;
+
+    @media (max-width: 500px) {
+        width: 300px;
+    }
+}
+
+.iframe {
+    width: 960px;
+    height: 515px;
+
+    @media (max-width: 500px) {
+        width: 350px;
+        height: 190px;
+    }
+}
+
+.changeFlex {
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
+}
+
+.card {
+    max-width: 500px;
+    min-height: 300px;
+}

@@ -1,0 +1,42 @@
+.PricingPage {
+    max-width: 1100px;
+    padding: 0 10px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    stroke: var(--text-gray);
+}
+
+.cardEdit {
+    padding: 0 5px;
+    margin-left: -25px;
+    margin-bottom: -5px;
+}
+
+.toggle {
+    margin-bottom: -5px;
+}
+
+.editHStack {
+    margin-left: 30px;
+}
+
+.changeFlex {
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 550px;
+    width: 30%;
+
+    @media (max-width: 500px) {
+        width: 90%;
+    }
+}

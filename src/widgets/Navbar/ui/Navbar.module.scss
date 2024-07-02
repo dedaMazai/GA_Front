@@ -1,0 +1,51 @@
+.Navbar {
+    width: 100%;
+    height: var(--navbar-height);
+    background: var(--inverted-bg-color);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+}
+
+.iconLogo {
+    height: 40px;
+    width: 55px;
+    fill: var(--primary-color);
+}
+
+.upload {
+    fill: var(--bg-color);
+}
+
+.iconBtn {
+    width: 17px;
+    height: 17px;
+}
+
+.iconSms {
+    width: 20px;
+    height: 20px;
+}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: var(--card-bd-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleSettings {
+    height: 23px;
+    width: 23px;
+    fill: white;
+}
+
+.mediaMainWrap {
+    @media (max-width: 1050px) {
+        flex-direction: column;
+    }
+}
