@@ -34,28 +34,13 @@ export const Footer = (props: FooterProps) => {
                             wrap
                         />
                     </VStack>
-                    <HStack gap="8">
-                        <Button
-                            color='green'
-                            jump
-                            onClick={() => redirectToWebsite('https://t.me/sl0max')}
-                        >
-                            {t('Telegram')}
-                        </Button>
-                        <Typography
-                            text={t('или')}
-                        />
-                        <Button
-                            color='grey'
-                            jump
-                            onClick={() => navigate(RoutePath.PRICING())}
-                        >
-                            <HStack gap="4">
-                                {t('Цены')}
-                                <Icon Svg={ArrowDown} className={cls.iconArrow} />
-                            </HStack>
-                        </Button>
-                    </HStack>
+                    <Button
+                        color='green'
+                        jump
+                        onClick={() => redirectToWebsite('https://t.me/sl0max')}
+                    >
+                        {t('Telegram')}
+                    </Button>
                 </HStack>
                 <hr />
                 <HStack max justify='between' align='start'>
@@ -65,7 +50,7 @@ export const Footer = (props: FooterProps) => {
                             onClick={() => navigate(RoutePath.MAIN())}
                         >
                             <Icon Svg={Logo} className={cls.iconLogo} />
-                            <Typography text={t('chatwiz')} variant="green" bold size='l'/>
+                            <Typography text={t('GainAD')} variant="green" bold size='l'/>
                         </Button>
                         <HStack gap="16" max justify='center'>
                             <Button
@@ -82,82 +67,13 @@ export const Footer = (props: FooterProps) => {
                             </Button>
                         </HStack>
                     </VStack>
-                    <HStack wrap="wrap" gap="64" align='start'>
-                        <VStack align='start'>
-                            <Button
-                                bold
-                                variant="clearActive"
-                                onClick={() => navigate(RoutePath.MAIN())}
-                            >
-                                {t('Продукт')}
-                            </Button>
-                            <Button
-                                bold
-                                variant="clearActive"
-                                onClick={() => navigate(RoutePath.PRODUCT())}
-                            >
-                                {t('Бизнес')}
-                            </Button>
-                            {/* <Button
-                                bold
-                                variant="clearActive"
-                                onClick={() => navigate(RoutePath.FEATURES())}
-                            >
-                                {t('Особенности')}
-                            </Button> */}
-                            {/* <Button
-                                bold
-                                variant="clearActive"
-                                onClick={() => navigate(RoutePath.BLOG())}
-                            >
-                                {t('Новости')}
-                            </Button> */}
-                            {/* <Button
-                                bold
-                                variant="clearActive"
-                                onClick={() => navigate(RoutePath.ABOUT())}
-                            >
-                                {t('О нас')}
-                            </Button> */}
-                            <Button
-                                bold
-                                variant="clearActive"
-                                onClick={() => navigate(RoutePath.PRICING())}
-                            >
-                                {t('Цены')}
-                            </Button>
-                            <Button
-                                bold
-                                variant="clearActive"
-                                onClick={() => navigate(RoutePath.FAQ())}
-                            >
-                                {t('FAQ')}
-                            </Button>
-                        </VStack>
-                        <VStack align='start'>
-                            <Button
-                                bold
-                                variant="clearActive"
-                                onClick={() => navigate(RoutePath.LOGIN())}
-                            >
-                                {t('Войти')}
-                            </Button>
-                            <Button
-                                bold
-                                variant="clearActive"
-                                onClick={() => navigate(RoutePath.REGISTER())}
-                            >
-                                {t('Зарегистрироваться')}
-                            </Button>
-                        </VStack>
-                    </HStack>
                 </HStack>
                 <hr />
             </VStack>
             <Typography
                 align='center'
                 variant="gray"
-                text={t('Copyrights © 2023 chatwiz')}
+                text={t('Copyrights © 2023 GainAd')}
             />
         </footer>
     );

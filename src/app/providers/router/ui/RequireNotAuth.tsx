@@ -15,7 +15,7 @@ export function RequireNotAuth({ children, notAuthOnly }: RequireNotAuthProps) {
 
     if (auth && notAuthOnly) {
         return (
-            <Navigate to={RoutePath.HOME()} state={{ from: location }} replace />
+            <Navigate to={RoutePath.LOGIN()} state={{ from: location }} replace />
         );
     }
 

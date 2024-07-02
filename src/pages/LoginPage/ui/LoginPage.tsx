@@ -63,7 +63,7 @@ const LoginPage = () => {
                             text={t('У вас нет учетной записи?')}
                             align='center'
                         />
-                        <Button variant='clear' onClick={() => navigate(RoutePath.REGISTER())}>
+                        <Button variant='clear' onClick={() => {}}>
                             <Typography
                                 bold
                                 variant="green"

@@ -9,7 +9,6 @@ import Send from '@/shared/assets/icons/Send.svg';
 import { Typography } from '@/shared/ui/Text';
 import { Card } from '@/shared/ui/Card';
 import { Input } from '@/shared/ui/Input';
-import { Typewriter } from '@/shared/ui/Typewriter';
 import { MutableRefObject, useEffect, useRef, useState } from 'react';
 import { useChatQuery, useClearChatMutation, useSendQuestionMutation } from '@/entities/Chats';
 import { useNotification } from '@/shared/lib/hooks/useNotification/useNotification';
@@ -150,9 +149,7 @@ const HomeIdPage = () => {
                                     ref={index === chat?.message_history!.chat!.length - 1 ? chatRef : undefined}
                                     className={cls.smsCard} variant={from === 'human' ? "green" : "greyOne"}
                                 >
-                                    {(index === chat?.message_history!.chat!.length - 1) && from === "ai" ? (
-                                        <Typewriter text={sms} delay={7}  />
-                                    ) : <Typography text={sms} variant={from === 'human' ? "white" : "black"} />}
+                                    <Typography text={sms} variant={from === 'human' ? "white" : "black"} />
                                 </Card>
                             </HStack>
                         ))}
